@@ -251,18 +251,46 @@
             </div>
           </div>
           <div class="col-md-7">
+
             <div class="titlepage">
-              <h2>Nuestros Clientes</h2>
-              <span></span>
-              <p>
-                La confianza ganada por parte de nuestros clientes a lo largo de
-                más de 15 años en el mercado se debe en gran parte al sólido
-                respaldo de nuestros socios
-              </p>
-              <a href="clients.html" class="read_more"
-                >ver mas<i class="fa fa-arrow-right" aria-hidden="true"></i
-              ></a>
+    <h2>Nuestros Clientes</h2>
+    <span></span>
+    <p>
+        La confianza ganada por parte de nuestros clientes a lo largo de más de 15 años en el mercado se debe en gran parte al sólido respaldo de nuestros socios
+    </p>
+    <a href="#" class="read_more" data-toggle="modal" data-target="#videoModal">ver mas<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+
+    <!-- Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalLabel">Video de Nuestro Servicio</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <video id="videoCliente" controls width="100%">
+                        <source src="./video/videoServicio.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
             </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $('#videoModal').on('hidden.bs.modal', function () {
+            // Detiene el video cuando se cierra el modal
+            document.getElementById("videoCliente").pause();
+        });
+    </script>
+</div>
           </div>
         </div>
       </div>

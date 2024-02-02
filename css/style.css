@@ -813,3 +813,52 @@ ul.cont li {
 .socialMedia {
      font-size: 24px;
 }
+
+  /* Estilos generales para las tarjetas */
+  .card {
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Estilos para la imagen de fondo de cada tarjeta */
+  .card img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+  }
+
+  /* Estilos para el contenido de texto de cada tarjeta */
+  .card .content {
+    padding: 20px;
+    background-color: white;
+    flex: 1;
+  }
+
+  /* Estilos para el encabezado de cada tarjeta */
+  .card h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  /* Estilos para el párrafo de cada tarjeta */
+  .card p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: gray;
+  }
+
+  /* Estilos para la etiqueta de Twitter de cada tarjeta */
+  .card span {
+    display: block;
+    padding: 5px 10px;
+    background-color: #1da1f2;
+    color: white;
+    text-align: center;
+  }
